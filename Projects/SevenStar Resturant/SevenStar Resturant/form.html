@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <style>
+        h1{
+            text-align: center;
+            color: lightseagreen;
+        }
+
+
+        fieldset{
+            border: 1px solid lightseagreen;
+        }
+        span{
+            color: red;
+        }
+        legend{
+            color: rgb(134, 134, 134);
+        }
+
+        input[type="submit"]{
+           padding: 9px;
+           width: 180px;
+           background-color: lightseagreen;
+           border: none;
+           margin-left: 150px;
+           margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Grading System</h1>
+    <form action="data.php" method="post">
+        <table>
+            <tr>
+                <td><fieldset>
+                    <legend>Name<span>*</span></legend>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </fieldset></td>
+                <td>
+                    <fieldset>
+                        <legend>Total Marks<span>*</span></legend>
+                        <input type="number" name="tmarks" id="" placeholder="Enter your Total Marks" required>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Obtained Marks<span>*</span></legend>
+                        <input type="number" name="omarks" id="" placeholder="Enter your obtained Marks" required>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="" id="">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
